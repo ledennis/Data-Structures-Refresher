@@ -1,0 +1,17 @@
+# This will contain random topics of CS through my implementation of data structures.
+
+# Abstract Classes vs Interfaces
+	1. The big key difference from what I can tell is that Classes can only extend one Abstract Class while they can implement multiple interfaces
+	2. Subclasses of abstract classes DO NOT need to implement all functions of abstract class BUT they then must become abstract themselves.
+	3. Classes that implements interfaces MUST implement every function.
+	4. In interfaces, all fields are automatically public, static, and final and any methods are public. Where in abstract classes, fields can be not static and final, and methods can be public/protected/private.
+
+# Methods in Java
+	1. public -
+	2. protected - 
+	3. private -
+	4. abstract -
+
+# Classes in Java
+	1. public
+	2. abstract
