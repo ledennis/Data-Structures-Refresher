@@ -1,0 +1,52 @@
+Linked Lists
+
+# Source: http://codingwithalex.com/data-structures-everything-you-need-to-know-about-linked-list/
+
+# What About Them?
+	Linked Lists consists of a linear sequence of nodes
+	n -> n -> -n
+	Each node has a data value and a reference to the next node
+	There is a head which points to the first node in a link-list BUT is not an actual node
+
+# What's Good About Them?
+	1. Dynamic - meaning you can add and remove elements whenever (Opposite is Static - meaning things are at a fixed state)
+	   Also means that you don't need to know how many elements you need when creating as opposed to creating an array
+	
+	2. You can insert elements into the middle of the list
+	   (As opposed to what else?)
+	
+	3. Good Insertion and Deletion, takes O(1) time 
+	
+# What's Bad About Them?
+	1. No Random Access
+	   Meaning you have to search through start from the first node to the other nodes
+	   Meaning search is O(n), with n being the amount of nodes in the linked lists
+
+	2. Takes extra space since you have to store a pointer to every element
+	   (As opposed to what else?)  
+
+# Types of Linked Lists
+	1. Singly Linked Lists
+	2. Doubly Linked Lists
+	3. Circular Linked Lists
+
+# Singly Linked Lists
+	What people generally think of when you mention a linked list. Has all the attributes of above.
+
+# Doubly Linked Lists
+	Has an extra pointer to the previous node. You can traverse forward or backwards throught the lists now!
+
+	# Advantage
+	1. Forwards and backwards traversal
+	2. Apparently deleting is faster?
+
+	# Disadvantage
+	1. More memory taken by adding an extra pointer for each node
+	2. Have to account for both pointers when doing node manipulation
+
+# Circular Linked Lists
+	Same as doubly linked list BUT the first and last nodes are linked
+
+	# Advantage
+	1. You can start at any node for traversal
+	2. Can traverse the list more than once (How would this be a good thing?)
