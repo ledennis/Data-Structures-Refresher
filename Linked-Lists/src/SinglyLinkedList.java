@@ -1,11 +1,7 @@
-import java.util.Stack;
-
 public class SinglyLinkedList {
-    private Stack<Node> list;
-    private Node head;
+    protected Node head;
 
     public SinglyLinkedList() {
-        this.list = new Stack<Node>();
         this.head = null;
     }
 
@@ -32,6 +28,7 @@ public class SinglyLinkedList {
         else {
             Node currentNode = this.head;
             Node previousNode = null;
+
             while (!currentNode.equals(deleteNode)) {
                 previousNode = currentNode;
                 currentNode = currentNode.getNextNode();
