@@ -8,8 +8,8 @@ Hashing
 	(Sorry for copy/paste, this is a solid explanation.)
 
 # What is a Hash Map or Hash Table?
-	Both are data structures that maps keys to values. Sort of like an array with key value pairs, but with a hash function
-	so that look up times are minimized to O(1) time.
+	Both are data structures that maps keys to values. It essentially computes a hash function to index into an array of buckets
+	or slots. Each index contains a linked-list so that whenever collisions occur, the new element will be inserted into that list. 
 
 # What is the difference between a Hash Map and Hash Table?
 	HashTables are synchronized and HashMaps are unsynchronized. This means that manipulating HashMaps are faster because
@@ -25,3 +25,9 @@ Hashing
 # Complexity of HashMaps/HashTables
 	Insertion/Deletion/Search: O(1)
 	Space Complexity: O(n) where n is the size of the elements inside the data structure	
+
+# Hash Function in Java (Source: https://stackoverflow.com/questions/9364134/what-hashing-function-does-java-use-to-implement-hashtable-class)
+	It seems that Java has it's own HashFunction that is built in. You can also first pass in your own hash function, which will be used 
+	on top of the hash function in java. If there is a lot of collision, where a bunch of elements are put into one bucket in the 
+	hash map, the search complexity will go up to O(n). To prevent attackers from exploiting this, there is another random element used 
+	when hashing in a hash map.
