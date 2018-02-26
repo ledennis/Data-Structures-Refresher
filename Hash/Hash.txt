@@ -1,0 +1,27 @@
+Hashing
+
+# Source: http://codingwithalex.com/data-structures-everything-need-know-hashtables-hashmaps-hashsets/
+
+# What is a Hash Function? Source(https://en.wikipedia.org/wiki/Hash_function)
+	A hash function is any function that maps data of arbitrary size to data of fixed size.
+	The values returned by hash functions are called hash values, hash codes, disgests, or hashes.
+	(Sorry for copy/paste, this is a solid explanation.)
+
+# What is a Hash Map or Hash Table?
+	Both are data structures that maps keys to values. Sort of like an array with key value pairs, but with a hash function
+	so that look up times are minimized to O(1) time.
+
+# What is the difference between a Hash Map and Hash Table?
+	HashTables are synchronized and HashMaps are unsynchronized. This means that manipulating HashMaps are faster because
+	there is no synchronization overhead. Synchronization is generally when there is a lock for adding/removing/reading/writing
+	to a certain thing, and in this case, it is the HashTable. Synchronization is great for reliability and robustness.
+
+# What is a HashSet?
+	A HashSet is a data structure where the list of values that are unique. Other interesting things:
+	1. In random order
+	2. If inserted with a duplicate element, new element will override old element
+	3. Non-synchronized
+
+# Complexity of HashMaps/HashTables
+	Insertion/Deletion/Search: O(1)
+	Space Complexity: O(n) where n is the size of the elements inside the data structure	
