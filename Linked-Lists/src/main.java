@@ -11,6 +11,8 @@ public class main {
         newSinglyList.printList();
         newSinglyList.deleteNode(b);
         newSinglyList.printList();
+        newSinglyList.deleteNode(a);
+        newSinglyList.printList();
 
         TwoPointerNode e = new TwoPointerNode(1);
         TwoPointerNode f = new TwoPointerNode(2);
@@ -26,10 +28,25 @@ public class main {
         newDoublyList.addNode(h);
         newDoublyList.addNode(i);
 
-//        newDoublyList.printListLeftFromNode(fail);
-//        newDoublyList.printListRightFromNode(fail);
+
         newDoublyList.printList();
-        newDoublyList.printListLeftFromNode(g);
-        newDoublyList.printListRightFromNode(g);
+        newDoublyList.deleteNode(g);
+        newDoublyList.printListLeftFromNode(h);
+        newDoublyList.printListRightFromNode(f);
+
+        CircularLinkedList newCircularLinkedList = new CircularLinkedList();
+        newCircularLinkedList.addNode(e);
+        newCircularLinkedList.addNode(f);
+        newCircularLinkedList.addNode(g);
+        newCircularLinkedList.addNode(h);
+        newCircularLinkedList.addNode(i);
+
+        newCircularLinkedList.printList();
+        newCircularLinkedList.deleteNode(e);
+        newCircularLinkedList.printList();
+        newCircularLinkedList.printListRightFromNode(g);
+        newCircularLinkedList.printListLeftFromNode(g);
+        newCircularLinkedList.deleteNode(g);
+        newCircularLinkedList.printList();
     }
 }

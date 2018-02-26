@@ -25,6 +25,9 @@ public class SinglyLinkedList {
         else if (deleteNode == null) {
             System.out.println("This node is null");
         }
+        else if (deleteNode.equals(this.head)) {
+            this.head = deleteNode.getNextNode();
+        }
         else {
             Node currentNode = this.head;
             Node previousNode = null;

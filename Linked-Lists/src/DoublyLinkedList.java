@@ -22,8 +22,15 @@ public class DoublyLinkedList {
     }
 
     public void deleteNode(TwoPointerNode removeNode) {
-        TwoPointerNode node = findNode(removeNode);
-        removeNode.getPreviousNode().setNextNode(removeNode.getNextNode());
+        listIsEmpty();
+
+        if (removeNode == this.head) {
+            this.head = this.head.getNextNode();
+        }
+        else {
+            removeNode.getPreviousNode().setNextNode(removeNode.getNextNode());
+        }
+
     }
 
     public void printList() {
@@ -81,5 +88,16 @@ public class DoublyLinkedList {
         }
 
         return currentNode;
+    }
+
+    public void listIsEmpty() {
+        try {
+            if (this.head == null) {
+                throw new HeadIsNullException();
+            }
+        }
+        catch (HeadIsNullException e) {
+            System.out.println("List is empty");
+        }
     }
 }
