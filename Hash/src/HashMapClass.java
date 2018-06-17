@@ -26,7 +26,7 @@ public class HashMapClass {
 
         System.out.println("Finished first iterator");
 
-        // Iterators for hash maps start at a random entry but each iterator is the same?
+        // Iterators for hash maps start at a random entry but each iterator is the same
         while(it2.hasNext()) {
             // Map Entry has .getKey() and .getValue() for entries
             Map.Entry mapEntry = (Map.Entry)it2.next();
