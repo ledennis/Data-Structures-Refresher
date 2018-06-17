@@ -14,5 +14,17 @@ public class mainStack {
     intStack.pop();
     intStack.pop();
     intStack.printStack();
+
+    GenericQueue<String> stringQueue = new GenericQueue<String>();
+    stringQueue.push("a");
+    stringQueue.push("b");
+    stringQueue.push("c");
+
+    stringQueue.printQueue();
+
+    stringQueue.pop();
+    stringQueue.pop();
+    stringQueue.pop();
+    stringQueue.pop();
   }
 }
